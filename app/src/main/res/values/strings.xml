@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">project78</string>
+
+    <string-array name="Nama_Bay">
+        <item> </item>
+        <item>BAY KOPEL</item>
+        <item>BAY TRF III 150 KV</item>
+        <item>BAY TRF IV 150 KV</item>
+        <item>BAY TRF V 150 KV</item>
+        <item>BAY TRF VI 150 KV</item>
+        <item>PHT 150 KV SENTUL 1</item>
+        <item>PHT 150 KV SENTUL 2</item>
+        <item>PHT 150 KV KEDUNG BDK 1</item>
+        <item>PHT 150 KV KEDUNG BDK 2</item>
+        <item>PHT 150 KV CIAWI 1</item>
+        <item>PHT 150 KV CIAWI 2</item>
+        <item>PHT 150 KV KATULAMPA</item>
+        <item>PHT 150 KV CIANJUR</item>
+        <item>PHT 150 KV GUNUNG SALAK BARU</item>
+        <item>PHT 150 KV CIBADAK BARU</item>
+    </string-array>
+
+    <string-array name="kondisi_pmt">
+        <item> </item>
+        <item>NORMAL</item>
+        <item>TIDAK NORMAL</item>
+    </string-array>
+
+    <string-array name="kondisi_pegas">
+        <item> </item>
+        <item>FULL CHARGE</item>
+        <item>TIDAK CHARGE</item>
+        <item>TIDAK TERBACA</item>
+    </string-array>
+
+    <string-array name="tekanangassf6">
+        <item> </item>
+        <item>NORMAL</item>
+        <item>BERKURANG</item>
+        <item>TIDAK TERBACA</item>
+        <item>RUSAK</item>
+    </string-array>
+
+    <string-array name="indikatorsf6">
+        <item> </item>
+        <item>HIJAU</item>
+        <item>KUNING</item>
+        <item>MERAH</item>
+        <item>TIDAK TERPASANG</item>
+    </string-array>
+
+    <string-array name="kondisikabel">
+        <item> </item>
+        <item>NORMAL</item>
+        <item>KOTOR</item>
+        <item>ISOLASI TERLUAR TERLUKA</item>
+        <item>PANAS >40 DERAJAT</item>
+    </string-array>
+
+
+</resources>

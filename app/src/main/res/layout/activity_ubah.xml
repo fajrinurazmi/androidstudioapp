@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UbahActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Data Inspeksi"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:helperText="Pilih Bay/Penghantar"
+            >
+            <Spinner
+                android:id="@+id/sp_bay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Nama_Bay"
+                android:padding="10dp"
+                android:scrollbarSize="42dp"
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_datepicker"
+            android:layout_below="@+id/sp_bay"
+            android:text="Pilih Tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:text="Pilih Tanggal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/tv_dateresult"
+            android:layout_below="@+id/bt_datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="Kondisi PMT"
+            >
+            <Spinner
+                android:padding="10dp"
+                android:id="@+id/sp_kondisipmt"
+                android:entries="@array/kondisi_pmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="40sp">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="Kondisi Pegas"
+            >
+            <Spinner
+                android:padding="10dp"
+                android:id="@+id/sp_kondisipegas"
+                android:entries="@array/kondisi_pegas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="Tekanan Gas"
+            >
+            <Spinner
+                android:padding="10dp"
+                android:id="@+id/sp_tekanangas"
+                android:entries="@array/tekanangassf6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_angkatekanangas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tekanan Gas SF6"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="Tekanan Gas"
+            >
+            <Spinner
+                android:padding="8dp"
+                android:id="@+id/sp_indikatorsf6"
+                android:entries="@array/indikatorsf6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_counterpmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="Kondisi Kabel"
+            >
+            <Spinner
+                android:padding="8dp"
+                android:id="@+id/sp_kondisikabel"
+                android:entries="@array/kondisikabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubah"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

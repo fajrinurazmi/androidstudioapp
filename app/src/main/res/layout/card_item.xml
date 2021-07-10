@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardBackgroundColor="@color/biru10"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvidtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Text View Id"
+            android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemi"
+                android:layout_alignParentRight="true"
+                android:textSize="11dp"
+                android:text="Tanggal"
+                />  //Tanggal
+
+            <TextView
+                android:id="@+id/tv_namaBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins"
+                android:textSize="17dp"
+                android:text="NAMA BAY TAMPIL DISINI"
+                /> //Nama Bay
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_below="@+id/tv_namaBay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:text="Kondisi PMT: "
+            android:fontFamily="@font/poppinssemi"
+            />
+        <TextView
+            android:id="@+id/tv_kondisiPmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Hasil Kondisi PMT"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/id1"
+            android:layout_below="@+id/tv_namaBay"
+            android:fontFamily="@font/poppinssemi"/>
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Kondisi Pegas : "
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"/>
+
+        <TextView
+            android:id="@+id/tv_kondisiPegas"
+            android:layout_below="@+id/tv_kondisiPmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id2"
+            android:text="kondisi pegas"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/id3"
+            android:layout_below="@id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Tekanan Gas :"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/tv_tekananGas"
+            android:layout_below="@id/tv_kondisiPegas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id3"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Tekanan gas: "
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id4"
+            android:layout_below="@id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Angka Tekanan Gas :"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/tv_angkaTekananGas"
+            android:layout_below="@id/tv_tekananGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id4"
+            android:fontFamily="@font/poppinssemi"
+            android:text="angka tekanan gas"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/id5"
+            android:layout_below="@id/id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Indikator SF6 : "
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/tv_indikatorSf6"
+            android:layout_below="@id/tv_angkaTekananGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id5"
+            android:fontFamily="@font/poppinssemi"
+            android:text="indikator sf6"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/id6"
+            android:layout_below="@id/id5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Counter PMT : "
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/tv_counterPmt"
+            android:layout_below="@id/tv_indikatorSf6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id5"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Counter PMT"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/id7"
+            android:layout_below="@id/id6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Kondisi Kabel: "
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinssemi"
+            />
+
+        <TextView
+            android:id="@+id/tv_kondisiKabel"
+            android:layout_below="@id/tv_counterPmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id5"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Kondisi Kabel"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
